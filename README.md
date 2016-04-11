@@ -7,6 +7,11 @@ This is a simple Node server API for taking a URL as a parameter and returning a
 * Go to your cloned directory and `npm install` the dependencies.
 * Make HTTP requests to `localhost:8888/api/words` with a `?url` parameter to count.
 
+E.g.
+
+    $ curl http://localhost:8888/api/words?url=http://demo.chevro.co/kink
+    {"count":20}
+
 ##Potential Enhancements
 * Implement a logger module to log what requests come through, whether they were valid, what their count was, and save it to a running text file.
 * Provide an HTML endpoint with instructions at root, redirect all traffic there besides `/api/*`.
